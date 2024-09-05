@@ -1,0 +1,3 @@
+To design this website, the CSS properties display: flex and display: grid were used to achieve a responsive and orderly view on various screen sizes.
+
+display: flex was implemented in the header to align the logo and company name horizontally, ensuring that both elements are well positioned and visible at all times. display: grid was applied to the main content to structure it in multiple columns, facilitating a clear and organized arrangement of text and other elements. Additionally, media queries were used to adjust the layout to smaller screens, changing the layout to a single column and hiding non-essential elements to improve usability on mobile devices.

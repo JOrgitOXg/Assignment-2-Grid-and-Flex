@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: auto;
+    width: 100px;
+}
+
+header .company-name h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ecf0f1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.featured {
+    grid-column: 1 / -1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: justify;
+}
+
+.secondary {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: justify;
+}
+
+.sidebar {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: justify;
+}
+
+footer {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex: 1;
+    margin: 10px;
+    line-height: 1.5;
+    flex-basis: 30%;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured {
+        grid-column: span 2;
+    }
+
+    .sidebar {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        grid-column: span 1;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    footer ul {
+        justify-content: center;
+    }
+}
